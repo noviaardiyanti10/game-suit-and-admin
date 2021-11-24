@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partial/head.ejs") %>
+
+    <body class="dashboard">
+
+        <main class="container-fluid">
+            <%- include("../partial/navbar.ejs") %>
+                <div class="card dashboard-card p-2 shadow-lg">
+                    <div class="d-flex justify-content-start px-4 py-3">
+                        <h4 class="fw-bold">Dashboard</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-3 m-3 col-card">
+                            <div class="card users-card shadow-sm">
+                                <div class="card-body mx-3">
+                                    <h3 class="card-title text-center"><i class="fas fa-users icon-dasboard text-white"></i></h3>
+                                    <h3 class="card-text fw-bold py-2">
+                                        <%= totalUsers%>
+                                    </h3>
+                                    <p class="card-subtitle mb-3 text-muted">Total Users</p>
+                                    <a href="/users" class="card-link d-flex justify-content-center  text-decoration-none">Go to user page &nbsp;<i class="fas fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-3 m-3 col-card">
+                            <div class="card game-card shadow-sm">
+                                <div class="card-body mx-3">
+                                    <h3 class="card-title text-center"><i class="fas fa-gamepad icon-dasboard text-white"></i></h3>
+                                    <h3 class="card-text fw-bold py-2">
+                                        <%= totalGames%>
+                                    </h3>
+                                    <p class="card-subtitle mb-3 text-muted">Total Game Played</p>
+                                    <a href="/games" class="card-link text-success d-flex justify-content-center text-decoration-none">Go to game page &nbsp;<i class="fas fa-arrow-circle-right"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+    </body>
+
+</html>

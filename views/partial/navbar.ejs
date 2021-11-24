@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light py-2">
+    <div class="container-fluid">
+        <img src="/images/logo 1.png" alt="logo" class="logo rounded-pill mx-3">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bolder">
+                <li class="nav-item px-3">
+                    <a class="nav-link active" aria-current="page" href="/dashboard">Home</a>
+                </li>
+                <li class="nav-item dropdown px-3">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     User
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/addUser" title="Add User">Add User</a></li>
+                        <li><a class="dropdown-item" href="/users" title="Users Page">User List</a></li>
+                        <li><a class="dropdown-item" href="/skors" title="Scores Page">Skor List</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link active" aria-current="page" href="/biodatas" title="Biodatas Page">Biodata</a>
+                </li>
+
+
+                <li class="nav-item px-3">
+                    <a class="nav-link active" href="/games" tabindex="-1" aria-disabled="true" title="Games Page">Games</a>
+                </li>
+
+            </ul>
+            <div class="d-flex align-items-center mx-4 logout-btn">
+                <p class="text-warning fw-bold my-1"><i class="fas fa-user-circle"></i>
+                    <%= locals.username %>
+                </p>
+            </div>
+            <div class="d-flex align-items-center mx-5 logout-btn">
+                <a href="/logout">
+                    <button class="btn btn-dark fw-bold fs-6" type="button">Logout</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>

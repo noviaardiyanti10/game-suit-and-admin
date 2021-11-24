@@ -1,0 +1,23 @@
+{
+    "development": {
+        "username": "novia10",
+        "password": "novia12345",
+        "database": "user-history_development",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    },
+    "test": {
+        "username": "novia10",
+        "password": "novia12345",
+        "database": "user-history_test",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    },
+    "production": {
+        "username": "novia10",
+        "password": "novia12345",
+        "database": "user-history_production",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    }
+}

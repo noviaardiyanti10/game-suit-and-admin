@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partial/head.ejs") %>
+
+    <body class="users">
+
+        <%- include("../partial/navbar.ejs") %>
+
+            <main class="container-fluid my-4 ">
+
+                <div class="head-title my-3">
+                    <h3 class="fw-bold text-center py-4">Data Games</h3>
+                </div>
+
+                <div class="table table-responsive tableFixHead shadow-sm px-4">
+                    <table class="table table-fixed  ">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">Room ID</th>
+                                <th scope="col">Room Name</th>
+                                <th scope="col">First Player ID</th>
+                                <th scope="col">Second Player ID</th>
+                                <th scope="col">Game Result</th>
+                                <th scope="col">Played At</th>
+                                <th scope="col">History</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% 
+                             games.forEach(gm => { %>
+
+
+                                <tr>
+                                    <th scope="row" class="my-1">
+                                        <%= gm.id %>
+                                    </th>
+
+                                    <td>
+                                        <%= gm.room_name %>
+                                    </td>
+
+                                    <td>
+                                        <%= gm.player_one_id%>
+                                    </td>
+                                    <td>
+                                        <%= gm.player_two_id %>
+                                    </td>
+                                    <td>
+                                        <%= gm.game_result %>
+                                    </td>
+                                    <td>
+                                        <%= gm.updatedAt %>
+                                    </td>
+                                    <td>
+                                        <a href="/gamehistories/<%= gm.id %>">
+                                            <button type="submit" class="btn btn-success text-white fw-bolder m-2 rounded-pill"><i class="fas fa-info-circle"></i></button>
+                                        </a>
+                                    </td>
+
+
+                                </tr>
+                                <% }) %>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+
+    </body>
+
+</html>

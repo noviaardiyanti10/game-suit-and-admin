@@ -1,0 +1,262 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-body {
+    background-image: url(../images/team-soldiers-walk-city-after-nuclear-war-illustration.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.txt-login {
+    color: rgb(37, 41, 41);
+}
+
+.bg-form {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0.8rem;
+}
+
+.txt-login p {
+    font-size: 0.8rem;
+}
+
+.login-body button {
+    background-color: rgb(39, 120, 145);
+}
+
+.logo {
+    width: 3rem;
+}
+
+nav {
+    position: absolute;
+}
+
+ul li:hover {
+    font-weight: lighter;
+}
+
+.users-card {
+    background-color: rgba(127, 255, 212, 0.342);
+    width: 18rem;
+}
+
+.game-card {
+    background-color: rgba(127, 240, 255, 0.342);
+    width: 18rem;
+}
+
+.dashboard-card {
+    height: 29rem;
+    background-color: white;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.dashboard {
+    background-color: rgba(122, 111, 96, 0.87);
+}
+
+.dashboard nav {
+    background-color: rgba(255, 255, 255, 0.884);
+    margin-top: 1rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.logout-btn button:hover {
+    background-color: darkslategrey;
+}
+
+.icon-dasboard {
+    background-color: black;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+.col-card i {
+    margin-top: 0.3rem;
+}
+
+.users nav {
+    background-color: rgb(58, 97, 97);
+}
+
+.users .nav-link,
+.users p {
+    color: rgba(255, 255, 255, 0.842) !important;
+}
+
+.tableFixHead {
+    overflow: scroll;
+    height: 25rem;
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: -1px;
+    padding: 1.2rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.biodatas {
+    background-image: url(../images/4853433.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.biodatas nav {
+    background-color: rgba(255, 255, 255, 0.699);
+}
+
+.biodatas .card {
+    width: 40rem;
+}
+
+.biodatas .card-body .row {
+    padding-left: 5rem;
+}
+
+.not-found {
+    padding-top: 13rem;
+}
+
+.card-user {
+    margin-top: 5rem;
+}
+
+@media (max-width: 576px) {
+    .login-button {
+        display: flex;
+        justify-content: start !important;
+    }
+    .dashboard-card {
+        height: 25rem;
+        margin: auto;
+    }
+    .dashboard-card h4 {
+        font-size: 1.5rem;
+    }
+    .logout-btn {
+        margin: 0.2rem !important;
+    }
+    .users-card,
+    .game-card {
+        width: 17.5rem !important;
+        height: 8rem;
+        margin: 0;
+    }
+    .users-card h3,
+    .game-card h3,
+    .icon-dasboard {
+        font-size: 1rem !important;
+        margin: 0;
+    }
+    .col-card {
+        margin: 0.5rem 0 0.5rem 0.8rem !important;
+    }
+    .col-card p {
+        font-size: 0.7rem;
+        margin-bottom: 0.1rem !important;
+    }
+    .col-card a {
+        font-size: 0.5rem;
+    }
+    .card-body {
+        padding-top: 0 !important;
+    }
+    .head-title h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .biodatas .card {
+        width: 100%;
+    }
+    .biodatas .card-body .row {
+        padding-left: 0;
+    }
+    nav {
+        padding: 0 !important;
+    }
+    .biodatas .container-fluid {
+        margin: 0 !important;
+    }
+    .biodatas h3 {
+        margin-bottom: 0.5rem !important;
+        font-size: 1.3rem;
+    }
+    .biodatas button,
+    .biodatas label,
+    .biodatas input,
+    .biodatas textarea {
+        font-size: 0.7rem !important;
+    }
+    .not-found {
+        padding-top: 10rem;
+    }
+    .not-found p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .login-button {
+        display: flex;
+        justify-content: start !important;
+    }
+    .dashboard-card {
+        height: 25rem;
+        margin: auto;
+    }
+    .users-card,
+    .game-card {
+        width: 18rem !important;
+        height: 8rem;
+        margin: 0;
+    }
+    .users-card h3,
+    .game-card h3,
+    .icon-dasboard {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .col-card {
+        margin-right: 6rem !important;
+    }
+    .col-card p {
+        font-size: 0.7rem;
+        margin-bottom: 0.3rem !important;
+    }
+    .col-card a {
+        font-size: 0.7rem;
+    }
+    .logout-btn {
+        margin: 0.2rem !important;
+    }
+    .head-title h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .add-user {
+        margin-top: 1rem;
+    }
+    .alert {
+        width: 13rem;
+        height: 3rem;
+    }
+    .btn-close {
+        height: 1rem;
+    }
+    .login-body .container {
+        padding-top: 0.8rem !important;
+    }
+}
